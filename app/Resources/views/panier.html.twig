@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% include 'header.html' %}
+    </head>
+	<body>
+		<div id="wrapper">
+			<div id="inner-wrapper">
+				<header id="header" class="col-full">
+					<div id="logo">
+						<h1 class="site-title">Site web marchand</h1>
+					</div>
+				</header>
+				<nav id="navigation" class="col-full" role="navigation">
+					<ul id="main-nav" class="nav fl">
+						<li id="menu-item-290"
+							class="menu-item menu-item-type-custom menu-item-object-custom">
+							<a href="/afficheRecherche">Rechercher
+								un article</a>
+						</li>
+						<li id="menu-item-290"
+							class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+							<a href="/accederAuPanier">Panier</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="content" class="col-full">
+					<div id="main-sidebar-container">
+						<section class="entry">
+							<div class="woocommerce">
+								<form
+									action="/recalculerPanier"
+									name="panier" method="post">
+									<table class="shop_table cart" cellspacing="0">
+										<thead>
+											<tr>
+												<th class="product-remove"></th>
+												<th class="product-thumbnail"></th>
+												<th class="product-name">Produit</th>
+												<th class="product-price">Prix</th>
+												<th class="product-quantity">Quantité</th>
+												<th class="product-subtotal">Total</th>
+											</tr>
+										</thead>
+										<tbody>
+										{% for lignePanier in panier.lignesPanier %}
+											<tr class="cart_item">
+												<td class="product-remove"><a class="remove"
+													title="Remove this item"
+													href="/supprimerLigne?refArticle={{ lignePanier.article.refArticle }}">×</a>
+												</td>
+												<td class="product-thumbnail"><img
+													class="attachment-shop_thumbnail wp-post-image" width="145"
+													height="145" alt="hoodie_4_front"
+													src="{{ lignePanier.article.image }}"></td>
+												<td class="product-name">{{ lignePanier.article.titre }}</td>
+												<td class="product-price"><span class="amount">{{ lignePanier.prixUnitaire }}€</span></td>
+												<td class="product-quantity">
+													<div class="quantity">
+														<input class="input-text qty text" type="number" size="4"
+															title="Qty" value="{{ lignePanier.quantite }}"
+															name="cart[{{ lignePanier.article.refArticle }}][qty]"
+															min="1" step="1">
+													</div>
+												</td>
+												<td class="product-subtotal"><span class="amount">{{ lignePanier.prixTotal }}€</span></td>
+											</tr>
+											{% endfor %}
+											<tr>
+												<td class="actions" colspan="6"><input class="button"
+													type="submit" value="Mise à jour du panier" name="update_cart" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+								<div class="cart-collaterals">
+									<div class="cross-sells"></div>
+									<div class="cart_totals ">
+										<h2>Total de la commande</h2>
+										<table cellspacing="0">
+											<tbody>
+												<tr class="cart-subtotal">
+													<th>Sous-total</th>
+													<td><span class="amount">{{ panier.total }}€</span></td>
+												</tr>
+												<tr class="shipping">
+													<th>Frais de port</th>
+													<td>Gratuit</td>
+												</tr>
+												<tr class="order-total">
+													<th>Total</th>
+													<td><strong> <span class="amount">{{ panier.total }}€</span>
+													</strong></td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="wc-proceed-to-checkout">
+											<a
+												href="/commanderPanier"
+												class="checkout-button button alt wc-forward">Effectuer la
+												commande</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+        {% include 'footer.html' %}
+			</div>
+		</div>
+	</body>
+</html>

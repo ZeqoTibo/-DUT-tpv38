@@ -1,0 +1,5 @@
+- ul.products{margin-left:0;clear:both}
++ ul.products{display:block;margin-left:0;clear:both}
+@media (min-width:768px)
+- ul.products li.product
++ ul.products{display:flex;flex-wrap:wrap} li.product

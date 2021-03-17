@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% include 'header.html' %}
+    </head>
+	<body>
+		<div id="wrapper">
+			<div id="inner-wrapper">
+				<header id="header" class="col-full">
+					<div id="logo">
+						<h1 class="site-title">Site web marchand</h1>
+					</div>
+				</header>
+				<nav id="navigation" class="col-full" role="navigation">
+					<ul id="main-nav" class="nav fl">
+						<li id="menu-item-290"
+							class="menu-item menu-item-type-custom menu-item-object-custom">
+							<a href="/afficheRecherche">Rechercher
+								un article</a>
+						</li>
+						<li id="menu-item-290"
+							class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+							<a href="/accederAuPanier">Panier</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="content" class="col-full">
+					<div id="main-sidebar-container">
+						<header>
+							<h1 class="title entry-title">Panier</h1>
+						</header>
+						<div class="woocommerce">
+							<section class="entry">
+								<p class="cart-empty">Votre panier est vide.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+        {% include 'footer.html' %}
+			</div>
+		</div>
+	</body>
+</html>

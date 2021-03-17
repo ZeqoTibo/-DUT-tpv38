@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% include 'header.html' %}
+    </head>
+	<body>
+		<div id="wrapper">
+			<div id="inner-wrapper">
+				<header id="header" class="col-full">
+					<div id="logo">
+						<h1 class="site-title">Administration du site web marchand</h1>
+					</div>
+				</header>
+				<section class="entry">
+				{{ form(form) }}
+				</section>
+        {% include 'footer.html' %}
+			</div>
+		</div>
+	</body>
+</html>

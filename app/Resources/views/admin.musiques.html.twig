@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% include 'header.html' %}
+    </head>
+	<body>
+		<div id="wrapper">
+			<div id="inner-wrapper">
+				<header id="header">
+					<div id="logo">
+						<h1 class="site-title">Administration du site web marchand</h1>
+					</div>
+				</header>
+				<section class="entry">
+					<table>
+						{% for article in articles %}
+						{% if loop.first %}
+						<thead>
+							<tr>
+								<th>R&eacute;f&eacute;rence&nbsp;</th>
+								<th>Titre</th>
+								<th>Disponibilit&eacute;</th>
+								<th>AEN</th>
+								<th>Image</th>
+								<th>prix</th>
+								<th>&nbsp;</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+						{% endif %}
+							<tr>
+								<td>{{ article.refArticle }}</td>
+								<td>{{ article.titre }}</td>
+								<td>{{ article.disponibilite }}</td>
+								<td>{{ article.EAN }}</td>
+								{% if article.image is not null and article.image is not empty %}
+								<td>{{ article.image }}</td>
+								{% else %}
+								<td>Inexistante</td>
+								{% endif %}
+								<td class="product-price">{{ article.prix }}</td>
+								<td><a href="/admin/musiques/modifier?refArticle={{ article.refArticle }}">Modifier</a></td>
+								<td><a id="{{ article.refArticle }}" href="">Supprimer</a></td>
+								<script type="text/javascript">
+// <![CDATA[
+    document.getElementById("{{ article.refArticle }}").addEventListener("click", function(event){
+		event.preventDefault();
+		if(confirm("Etes-vous sur de vouloir supprimer cet article ?"))
+		{
+			location.href = "/admin/musiques/supprimer?refArticle={{ article.refArticle }}" ;
+		}
+	}) ;
+	// preventdefault
+// ]]>
+								</script>
+							</tr>
+						{% if loop.last %}
+						</tbody>
+						{% endif %}
+						{% endfor %}
+					</table>
+					<table class="wp-list-table">
+						<tr>
+							<td><a href="/admin/musiques/ajouter">Ajouter un nouvel album musical</a></td>
+						</tr>
+					</table>
+				</section>
+        {% include 'footer.html' %}
+			</div>
+		</div>
+	</body>
+</html>
