@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>Welcome!</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        {% include 'header.html' %}
+		<meta charset="UTF-8"/>
+		<title>LuxuryMusic</title>
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+				integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+				crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+				integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+				crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		{% include 'header.html' %}
     </head>
 	<body>
 		<div id="wrapper">
 			<div id="inner-wrapper">
 				<header id="header" class="col-full">
 					<div id="logo">
-						<h1 class="site-title">Site web marchand</h1>
+						<h1 class="site-title">Luxury<span style="color: darkred">Music</span></h1>
 					</div>
 				</header>
 				<nav id="navigation" class="col-full" role="navigation">
@@ -24,6 +36,17 @@
 						<li id="menu-item-290"
 							class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
 							<a href="/accederAuPanier">Panier</a>
+						</li>
+						<li id="menu-item-290" class="dropdown menu-item menu-item-type-custom menu-item-object-custom d-flex justify-content-end">
+							<a class=" dropdown-toggle" type="button" data-toggle="dropdown">
+								Catégorie
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="/categorie_Musique">Musiques</a>
+								<a class="dropdown-item" href="/categorie_Livre">Livres</a>
+								<a class="dropdown-item" href="/categorie_Artiste">Artistes</a>
+								<a class="dropdown-item" href="/categorie_Auteur">Auteurs</a>
+							</div>
 						</li>
 					</ul>
 				</nav>
