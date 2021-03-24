@@ -5239,3 +5239,12 @@ body,html{
   color:white;
   text-decoration:none;
 }
+
+.jp-controls i {
+  font-size: 2em;
+  color: darkred;
+}
+.jp-controls i:hover {
+  font-size: 2em;
+  color: #428bca;
+}

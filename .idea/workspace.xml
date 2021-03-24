@@ -19,15 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bcbff5-de91-4b7c-9478-cf571650b6e6" name="Default Changelist" comment="">
+    <list default="true" id="a4bcbff5-de91-4b7c-9478-cf571650b6e6" name="Default Changelist" comment="Commit recherche.twig test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/recherche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/recherche.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/RechercheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/RechercheController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jplayer-2.9.2/skin/blue.monday/css/jplayer.blue.monday.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jplayer-2.9.2/skin/blue.monday/css/jplayer.blue.monday.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +65,8 @@
       <workItem from="1615367396440" duration="6203000" />
       <workItem from="1615453639729" duration="14000" />
       <workItem from="1615968571012" duration="1918000" />
+      <workItem from="1616076352819" duration="224000" />
+      <workItem from="1616589541875" duration="2266000" />
     </task>
     <servers />
   </component>
@@ -83,12 +83,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="647" y="315" key="Github.ShareDialog" timestamp="1615968636104">
+    <state x="647" y="315" key="Github.ShareDialog" timestamp="1616076568814">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1615968636104" />
+    <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1616076568814" />
     <state x="545" y="122" key="Github.UntrackedFilesDialog" timestamp="1615968643700">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
