@@ -86,7 +86,7 @@
 														<input class="input-text qty text" type="number" size="4"
 															title="Qty" value="{{ lignePanier.quantite }}"
 															name="cart[{{ lignePanier.article.refArticle }}][qty]"
-															min="1" step="1">
+															min="1" step="1" action="/recalculerPanier">
 													</div>
 												</td>
 												<td class="product-subtotal"><span class="amount">{{ lignePanier.prixTotal }}€</span></td>

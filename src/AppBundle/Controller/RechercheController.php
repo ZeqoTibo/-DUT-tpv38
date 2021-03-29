@@ -80,7 +80,7 @@ class RechercheController extends Controller
 
             $search = new Search();
             $search->setCategory('Music');
-            $keywords = 'nekfeu' ;
+            $keywords = 'ibrahim maalouf' ;
 
             //$search->setCategory('Books');
             //$keywords = 'Henning Mankell' ;

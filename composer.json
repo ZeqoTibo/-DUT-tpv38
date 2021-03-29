@@ -56,9 +56,9 @@
             "php": "7.4.10"
         },
         "sort-packages": true,
-        "cache-dir": "C:\\Users\\troch\\symfony\\cache",
-        "vendor-dir": "C:\\Users\\troch\\symfony\\vendor",
-        "bin-dir": "C:\\Users\\troch\\symfony\\bin"
+        "cache-dir": "C:\\Users\\thiba\\symfony\\cache",
+        "vendor-dir": "C:\\Users\\thiba\\symfony\\vendor",
+        "bin-dir": "C:\\Users\\thiba\\symfony\\bin"
     },
     "extra": {
         "symfony-app-dir": "app",

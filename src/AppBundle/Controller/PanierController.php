@@ -105,6 +105,7 @@ class PanierController extends Controller
 		return $this->render('panier.html.twig', [
             'panier' => $this->panier,
         ]);
+
     }
 	
     /**
