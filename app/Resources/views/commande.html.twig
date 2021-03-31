@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Welcome!</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        {% include 'header.html' %}
-    </head>
-	<body>
-		<div id="wrapper">
-			<div id="inner-wrapper">
-        {% include 'footer.html' %}
+<head>
+	<meta charset="UTF-8" />
+	<title>Welcome!</title>
+	<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+	{% include 'header.html' %}
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>LuxuryMusic</title>
+	<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	{% include 'header.html' %}
+</head>
+<body>
+<div id="wrapper">
+	<div id="inner-wrapper">
+		<header id="header" class="col-full">
+			<div id="logo">
+				<h1 class="site-title">Luxury<span style="color: darkred">Music</span></h1>
 			</div>
+		</header>
+		<nav id="navigation" class="col-full" role="navigation">
+			<ul id="main-nav" class="nav fl">
+				<li id="menu-item-290"
+					class="menu-item menu-item-type-custom menu-item-object-custom">
+					<a href="/afficheRecherche">Accueil</a>
+				</li>
+				<li id="menu-item-290" class="dropdown menu-item menu-item-type-custom menu-item-object-custom d-flex justify-content-end">
+					<a class=" dropdown-toggle" type="button" data-toggle="dropdown">
+						Catégorie
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="/categorie_Musique">Musiques</a>
+						<a class="dropdown-item" href="/categorie_Livre">Livres</a>
+					</div>
+				</li>
+				<li id="menu-item-290"
+					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+					<a href="/accederAuPanier">Panier</a>
+				</li>
+
+			</ul>
+		</nav>
+		<div id="container" class="container mb-5 mt-5 w-75 bg-transparent bg-gradient rounded">
+			<div class="row">
+				<div class="col-md-12 text-center mb-5">
+					<h5>Formulaire d'envoi</h5>
+				</div>
+			</div>
+			<form>
+				<div class="row mb-3">
+					<div class="form-group col-md-6">
+						<label for="inputNom" >Nom</label>
+						<input type="text" name="nom" pattern="[A-Za-Z]{3,7}" class="form-control" id="inputNom" placeholder="Nom" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="inputPrenom">Prénom</label>
+						<input type="text" pattern="[A-Za-z]{*}" class="form-control" id="inputPrenom" placeholder="Prénom" required>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="form-group col-md-6">
+						<label for="inputEmail4">Email</label>
+						<input type="email" class="form-control" id="inputEmail4" placeholder="prenom@exemple.com" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="inputTel">Télephone</label>
+						<input type="tel" pattern="[0-9]{10}" class="form-control" id="inputTel" placeholder="0684759384" required>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="form-group col-md-4">
+						<label for="inputAdresse">Adresse</label>
+						<input type="Adresse" class="form-control" id="inputAdresse" placeholder="Ex : 5 rue de la paix" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputVille">Ville</label>
+						<input type="text" pattern="[A-Za-z]{*}" class="form-control" id="inputVille" placeholder="Votre ville" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputCP">CP</label>
+						<input type="text" pattern="[0-9]{5}" class="form-control" id="inputCP" placeholder="Ex : 53000" required>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="form-group col-md-4">
+						<label for="inputNumCarte">Numero de la carte</label>
+						<input type="tel" pattern="[0-9]{16}" class="form-control" id="inputNumCarte" placeholder="4534 3432 3243 XXXX" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputDateExp">Date d'expiration</label>
+						<input type="text" class="form-control" id="inputDateExp" placeholder="02/22" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputCodeExp">Code de verification</label>
+						<input type="tel" pattern="[0-9]{3}" class="form-control" id="inputDateExp" placeholder="475" required>
+					</div>
+				</div>
+
+				<div class="form-check form-switch">
+					<input class="form-check-input bg-success border border-success" type="checkbox" id="flexSwitchCheckChecked" checked>
+					<label class="form-check-label" for="flexSwitchCheckChecked">Enregistrer mes informations</label>
+				</div>
+				<div class="bouton text-center">
+					<input type="submit" class="btn btn-success" value="Envoyer">
+				</div>
+			</form>
+
 		</div>
-	</body>
+
+		{% include 'footer.html' %}
+	</div>
+</div>
+</body>
 </html>

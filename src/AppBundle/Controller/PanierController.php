@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Commande\Contact;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -134,6 +135,19 @@ class PanierController extends Controller
      */
     public function commanderPanierAction(Request $request)
     {
-		return $this->render('commande.html.twig');
+       /* $contact = new Contact();
+        $form = $this->createFormBuilder($contact)
+            ->add('Nom')
+            ->add('Prenom')
+            ->add('Email')
+            ->add('Tel')
+            ->add('Adresse')
+            ->add('Ville')
+            ->add('CP')
+            ->getForm();*/
+
+        return $this->render('commande.html.twig',[
+           // 'formContact' => $form->createView(),
+        ]);
     }
 }

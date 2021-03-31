@@ -20,16 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4bcbff5-de91-4b7c-9478-cf571650b6e6" name="Default Changelist" comment="Boutton play modifier">
+      <change afterPath="$PROJECT_DIR$/web/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Artiste.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Auteur.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Livre.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/categorie_Livre.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Musique.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/categorie_Musique.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/commande.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/commande.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/panier.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/panier.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/panier.vide.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/panier.vide.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/recherche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/recherche.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PanierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/RechercheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/RechercheController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Pull.Settings">
     <option name="BRANCH" value="master" />
@@ -73,6 +82,8 @@
       <workItem from="1616589541875" duration="9228000" />
       <workItem from="1616705819045" duration="795000" />
       <workItem from="1617031069099" duration="594000" />
+      <workItem from="1617098534249" duration="13000" />
+      <workItem from="1617175828927" duration="8946000" />
     </task>
     <task id="LOCAL-00001" summary="Boutton play modifier">
       <created>1616592204747</created>
@@ -104,6 +115,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Boutton play modifier" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="543" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617182821012">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="543" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1617182821012" />
+    <state x="562" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1617180554336">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="562" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1617180554336" />
+    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617179960736">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1617179960736" />
     <state x="647" y="315" key="Github.ShareDialog" timestamp="1616076568814">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -112,6 +135,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="545" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834@0.0.1536.834" timestamp="1615968643700" />
+    <state x="480" y="140" key="NewPhpClassDialog" timestamp="1617178450573">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="480" y="140" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1617178450573" />
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1617177668640">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1617177668640" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1616592240679">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

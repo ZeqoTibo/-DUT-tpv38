@@ -30,12 +30,7 @@
 					<ul id="main-nav" class="nav fl">
 						<li id="menu-item-290"
 							class="menu-item menu-item-type-custom menu-item-object-custom">
-							<a href="/afficheRecherche">Rechercher
-								un article</a>
-						</li>
-						<li id="menu-item-290"
-							class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
-							<a href="/accederAuPanier">Panier</a>
+							<a href="/afficheRecherche">Accueil</a>
 						</li>
 						<li id="menu-item-290" class="dropdown menu-item menu-item-type-custom menu-item-object-custom d-flex justify-content-end">
 							<a class=" dropdown-toggle" type="button" data-toggle="dropdown">
@@ -44,10 +39,13 @@
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="/categorie_Musique">Musiques</a>
 								<a class="dropdown-item" href="/categorie_Livre">Livres</a>
-								<a class="dropdown-item" href="/categorie_Artiste">Artistes</a>
-								<a class="dropdown-item" href="/categorie_Auteur">Auteurs</a>
 							</div>
 						</li>
+						<li id="menu-item-290"
+							class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
+							<a href="/accederAuPanier">Panier</a>
+						</li>
+
 					</ul>
 				</nav>
 				<div id="content" class="col-full">
@@ -92,10 +90,7 @@
 												<td class="product-subtotal"><span class="amount">{{ lignePanier.prixTotal }}€</span></td>
 											</tr>
 											{% endfor %}
-											<tr>
-												<td class="actions" colspan="6"><input class="button"
-													type="submit" value="Mise à jour du panier" name="update_cart" /></td>
-											</tr>
+
 										</tbody>
 									</table>
 								</form>

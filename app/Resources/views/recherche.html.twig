@@ -64,12 +64,9 @@
             <ul id="main-nav" class="nav fl">
                 <li id="menu-item-290"
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item">
-                    <a href="/afficheRecherche">Articles à la une</a>
+                    <a href="/afficheRecherche">Accueil</a>
                 </li>
-                <li id="menu-item-290"
-                    class="menu-item menu-item-type-custom menu-item-object-custom d-flex justify-content-end">
-                    <a href="/accederAuPanier">Panier</a>
-                </li>
+
                 <li id="menu-item-290" class="dropdown menu-item menu-item-type-custom menu-item-object-custom d-flex justify-content-end">
                     <a class=" dropdown-toggle" type="button" data-toggle="dropdown">
                         Catégorie
@@ -77,9 +74,11 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="/categorie_Musique">Musiques</a>
                         <a class="dropdown-item" href="/categorie_Livre">Livres</a>
-                        <a class="dropdown-item" href="/categorie_Artiste">Artistes</a>
-                        <a class="dropdown-item" href="/categorie_Auteur">Auteurs</a>
                     </div>
+                </li>
+                <li id="menu-item-290"
+                    class="menu-item menu-item-type-custom menu-item-object-custom d-flex justify-content-end">
+                    <a href="/accederAuPanier">Panier</a>
                 </li>
             </ul>
             <ul>
@@ -95,65 +94,7 @@
                 </li>
             </ul>
         </nav>
-        <div id="content" class="site-content" tabindex="-1">
-            <div class="col-full">
-                <div class="primary" class="content-area">
-                    <section id="mainCat" class="site-main" role="main">
-                        <h1 class="page-title">À la une </h1>
-                        <ul class="products">
-                            {% for article in articles %}
-                            <li class="product type-product"><a
-                                        href="/ajouterLigne?refArticle={{ article.refArticle }}"> <img
-                                            src="{{ article.image }}"
-                                            class="attachment-shop_catalog wp-post-image" alt="poster_2_up"
-                                            height="300"/>
-                                    <h3>{{ article.titre }}</h3> <span class="price"><ins>
-													<span class="amount">{{ article.prix }} €</span>
-												</ins></span>
 
-                                </a> <a
-                                        href="/ajouterLigne?refArticle={{ article.refArticle }}"
-                                        class="button add_to_cart_button product_type_simple"><i class="fas fa-shopping-cart"></i></a>
-
-                                {% if article.pistes is defined %}
-                                    {% if article.pistes|length > 0 %}
-                                        <div id="jquery_jplayer_{{ article.refArticle }}" class="jp-jplayer"></div>
-                                        <div id="jp_container_{{ article.refArticle }}" class="jp-audio"
-                                             role="application">
-                                            <div class="jp-type-playlist">
-                                                <div class="jp-gui jp-interface">
-                                                    <div class="jp-controls-holder">
-                                                        <div class="jp-controls">
-
-                                                            <i class="far fa-backward jp-previous mr-3" role="button" tabindex="0"></i>
-                                                            <i class="far fa-play-circle jp-play mr-3" role="button" tabindex="0"></i>
-                                                            <i class="far fa-stop-circle jp-stop mr-3" role="button" tabindex="0"></i>
-                                                            <i class="far fa-forward jp-next" role="button" tabindex="0"></i>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="jp-playlist">
-                                                    <ul>
-                                                        <li>&nbsp;</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="jp-no-solution">
-                                                    <span>Update Required</span> To play the media you will need to
-                                                    either update your browser to a recent version or update your <a
-                                                            href="http://get.adobe.com/flashplayer/" target="_blank">Flash
-                                                        plugin</a>.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    {% endif %}
-                                {% endif %}
-                                {% endfor %}
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </div>
         {% include 'footer.html' %}
     </div>
 </div>
