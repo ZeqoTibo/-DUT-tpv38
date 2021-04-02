@@ -19,19 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4bcbff5-de91-4b7c-9478-cf571650b6e6" name="Default Changelist" comment="Boutton play modifier">
-      <change afterPath="$PROJECT_DIR$/web/js/test.js" afterDir="false" />
+    <list default="true" id="a4bcbff5-de91-4b7c-9478-cf571650b6e6" name="Default Changelist" comment="Ajout catégorie">
+      <change afterPath="$PROJECT_DIR$/web/amazonResponse.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Artiste.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Auteur.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Livre.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/categorie_Livre.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie_Musique.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/categorie_Musique.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/commande.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/commande.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/panier.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/panier.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/panier.vide.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/panier.vide.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/recherche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/recherche.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PanierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CategorieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CategorieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/RechercheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/RechercheController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +57,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Arthur/Documents/Ecole/DUT Informatique/Semestre 4/Informatique/M4105C - Complément d'informatique en vue d'une insertion immédiate/Site_Compl_info/Site Compl info" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,6 +78,9 @@
       <workItem from="1617031069099" duration="594000" />
       <workItem from="1617098534249" duration="13000" />
       <workItem from="1617175828927" duration="8946000" />
+      <workItem from="1617316480626" duration="470000" />
+      <workItem from="1617364244790" duration="1258000" />
+      <workItem from="1617377757634" duration="1028000" />
     </task>
     <task id="LOCAL-00001" summary="Boutton play modifier">
       <created>1616592204747</created>
@@ -127,6 +124,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1617179960736" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1617377780613">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1617377780613" />
     <state x="647" y="315" key="Github.ShareDialog" timestamp="1616076568814">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -143,6 +144,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1617177668640" />
+    <state x="781" y="345" key="SettingsEditor" timestamp="1617312017421">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1617312017421" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1616592240679">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

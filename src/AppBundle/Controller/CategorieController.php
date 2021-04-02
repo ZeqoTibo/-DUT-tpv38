@@ -93,8 +93,8 @@ class CategorieController extends Controller
         ]);
     }
 
-    //
-    private function initAmazon($cat) {
+
+    public function initAmazon($cat) {
         if (((count($this->entityManager->getRepository("AppBundle\Entity\Catalogue\Musique")->findAll()) == 0) && $cat == "Music" ) || ((count($this->entityManager->getRepository("AppBundle\Entity\Catalogue\Livre")->findAll()) == 0) && $cat == "Books" )) {
             $conf = new GenericConfiguration();
 
@@ -113,12 +113,15 @@ class CategorieController extends Controller
             $apaiIO = new ApaiIO($conf);
 
             $search = new Search();
-            $search->setCategory($cat);
+
+            if ($cat != null){
+                $search->setCategory($cat);
+            }
 
             if($cat == "Music"){
-                $keywords = array ("The Chainsmokers", "Nekfeu", "Daft Punk", "Bruno Mars", "Selena Gomez","PLK","Eva Queen", "Booba");
+                $keywords = array ("The Chainsmokers", "Nekfeu", "Daft Punk", "Bruno Mars", "Selena Gomez","PLK","Eva Queen", "Booba", "Elvis Presley", "Michael Jackson", "Edith Piaf");
             } else if ($cat == "Books") {
-                $keywords = array ("Arthur Rimbaud", " J.K. Rowling");
+                $keywords = array ("Arthur Rimbaud", " J.K. Rowling", "Victor Hugo", "Gustave Flaubert", "Jean Giono", "Guy de Maupassant");
             }
 
 

@@ -1911,7 +1911,7 @@ video {
   #main-sidebar-container {
     position: relative; }
 
-  #main-sidebar-container #main {
+  #main-sidebar-container #mainCat {
     position: relative; }
 
   #main-sidebar-container #sidebar {
@@ -1932,11 +1932,11 @@ video {
     margin-right: 3.8%; }
 
   /* Column Widths */
-  .one-col #main {
+  .one-col #mainCat {
     float: none; }
 
-  .two-col-left #main-sidebar-container #main,
-  .two-col-right #main-sidebar-container #main {
+  .two-col-left #main-sidebar-container #mainCat,
+  .two-col-right #main-sidebar-container #mainCat {
     width: 64.89%; }
 
   /* 610 / 940 */
@@ -1957,9 +1957,9 @@ video {
     width: 80.85%; }
 
   /* 760 / 940 */
-  .three-col-left #main-sidebar-container #main,
-  .three-col-middle #main-sidebar-container #main,
-  .three-col-right #main-sidebar-container #main {
+  .three-col-left #main-sidebar-container #mainCat,
+  .three-col-middle #main-sidebar-container #mainCat,
+  .three-col-right #main-sidebar-container #mainCat {
     width: 57.89%; }
 
   /* 440 / 760 */
@@ -1968,24 +1968,24 @@ video {
 
   /* 160 / 940 */
   /* Column Floating */
-  .two-col-left #main-sidebar-container #main,
+  .two-col-left #main-sidebar-container #mainCat,
   .two-col-right #main-sidebar-container #sidebar,
   .three-col-left #main-sidebar-container,
-  .three-col-left #main-sidebar-container #main,
-  .three-col-middle #main-sidebar-container #main,
+  .three-col-left #main-sidebar-container #mainCat,
+  .three-col-middle #main-sidebar-container #mainCat,
   .three-col-middle #sidebar-alt,
   .three-col-right #main-sidebar-container #sidebar,
   .three-col-right #sidebar-alt {
     float: left; }
 
   .two-col-left #main-sidebar-container #sidebar,
-  .two-col-right #main-sidebar-container #main,
+  .two-col-right #main-sidebar-container #mainCat,
   .three-col-left #main-sidebar-container #sidebar,
   .three-col-left #sidebar-alt,
   .three-col-middle #main-sidebar-container,
   .three-col-middle #main-sidebar-container #sidebar,
   .three-col-right #main-sidebar-container,
-  .three-col-right #main-sidebar-container #main {
+  .three-col-right #main-sidebar-container #mainCat {
     float: right; } }
 /*-------------------------------------------------------------------------------------------*/
 /* 3. POSTS */
@@ -3453,7 +3453,7 @@ ul.nav ul li.current-menu-item a,
   -webkit-border-radius: 5px;
   font-weight: normal; }
 
-#main #connect .col-left, #connect .col-right {
+#mainCat #connect .col-left, #connect .col-right {
   float: none;
   width: 100%; }
 
@@ -3571,13 +3571,13 @@ ul.nav ul li.current-menu-item a,
 
 @media only screen and (min-width: 768px) {
   /* Subcribe & Connect */
-  #main #connect .col-left {
+  #mainCat #connect .col-left {
     float: left; }
 
   #connect .col-right {
     float: right; }
 
-  #main #connect .col-left, #connect .col-right {
+  #mainCat #connect .col-left, #connect .col-right {
     width: 48%; }
 
   #connect .related-posts {
@@ -5193,7 +5193,7 @@ body.search .portfolio .portfolio-img {
 */
 
 
-
+/* ---------------------------------------------  A la une --------------------------------- */
 body,html{
   height: 100%;
   width: 100%;
@@ -5239,6 +5239,45 @@ body,html{
   color:white;
   text-decoration:none;
 }
+
+
+/* ---------------------------------------------  Catégories --------------------------------- */
+
+
+#mainCat figure img
+{
+  height: 30vh;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .jp-controls i {
   font-size: 2em;
